@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -18,7 +18,7 @@
             --p: #F6F1E8;   /* krem terang untuk kotak */
             --k: #111;      /* border hitam judul */
             --font-title: "Press Start 2P", monospace;
-            --font-body: "Pixelify Sans", "Courier New", monospace;
+            --font-body: "DotGothic16", "Courier New", monospace;
         }
         * { box-sizing: border-box; }
         body { margin: 0; background: var(--c); color: var(--i); font: 18px/1.7 var(--font-body); }

@@ -69,7 +69,7 @@
         <span class="locks" id="locks"></span>
     </header>
 
-    <main id="stages" data-home="{{ url('/') }}"></main>
+    <main id="stages" data-home="{{ url('/') }}" data-next="{{ url('/surat') }}"></main>
 
     <div id="modal">
         <div class="mbox">
@@ -216,16 +216,18 @@
 
         function summary() {
             setHud(5);
+            const home = $('#stages').dataset.home, next = $('#stages').dataset.next;
             const s = document.createElement('section');
             s.className = 'stage end';
             s.innerHTML = `<h2 class="ttl">BRANKAS TERBUKA</h2>
                 <svg viewBox="0 0 200 244" width="200" role="img" aria-label="Brankas terbuka"><use href="#safe"/><text class="st" x="134" y="69" style="fill:#76ABAE">OPEN</text></svg>
-                <div class="box" style="max-width:480px;margin:18px 0">Selamat, kamu telah mengenkripsi kata '${G.word}' menggunakan <span class="hl">Playfair Cipher</span>.</div>
-                <div>Hasil sandimu</div>
-                <div class="cipher">${G.enc.join('')}</div>
+                <div class="box" style="max-width:520px;margin:18px 0">
+                    <p>Brankas berhasil terbuka. Di dalamnya ada sebuah surat tua dan secarik catatan dengan tulisan yang tidak bisa dibaca.</p>
+                    <p>Maukah kamu lanjut untuk memecahkan kodenya?</p>
+                </div>
                 <div class="btns">
-                    <button class="btn p" data-again>&#9654; MAIN LAGI</button>
-                    <a class="btn" href="${$('#stages').dataset.home}" aria-label="Kembali ke halaman awal">
+                    <a class="btn p" href="${next}">&#9654; LANJUT</a>
+                    <a class="btn" href="${home}" aria-label="Kembali ke halaman awal">
                         <svg width="20" height="20" viewBox="0 0 16 16" shape-rendering="crispEdges" fill="currentColor" aria-hidden="true">
                             <rect x="7" y="1" width="2" height="2"/><rect x="5" y="3" width="6" height="2"/>
                             <rect x="3" y="5" width="10" height="2"/><rect x="1" y="7" width="14" height="2"/>

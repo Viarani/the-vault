@@ -27,7 +27,7 @@
         .cell.r { background: var(--o); }
         .arrow { font-family: var(--font-title); font-size: 14px; }
 
-        .bar { margin-top: auto; margin-bottom: 32px; background: var(--i); color: var(--c); padding: 14px 18px;
+        .bar { margin-top: 6px; margin-bottom: 32px; background: var(--i); color: var(--c); padding: 14px 18px;
                display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; box-shadow: 5px 5px 0 var(--t); }
         .bar span { font-size: 20px; font-weight: 500; }
 
