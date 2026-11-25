@@ -88,9 +88,10 @@
     <script>
         /* ===== DATA SOAL: ganti sesuai kebutuhan kelompok =====
            Kunci 5-7 huruf, soal 1 kata 7-10 huruf, tanpa huruf J. */
-        const KEYS  = ['MONARCH', 'SANDI', 'BRANKAS', 'RAHASIA', 'AKSARA'];
-        const WORDS = ['ENKRIPSI', 'KEAMANAN', 'PASSWORD', 'MISTERIUS', 'PENYUSUP',
-                       'HARTAKARUN', 'PENGAMAN', 'DOKUMEN', 'KOMBINASI', 'BERANGKAS'];
+        const KEYS  = ['CIPHER', 'ENIGMA', 'SECRET', 'PUZZLE', 'DECODE', 
+                        'RIDDLE', 'LOCKER', 'CRYPTIC', 'HIDDEN', 'VAULTS'];
+        const WORDS = ['GALAXIES', 'NEBULAE', 'PLANETS', 'ASTEROID', 'UNIVERSE',
+                       'STARDUST', 'ECLIPSE', 'COSMOS', 'SUPERNOVA', 'CONSTELLATION'];
 
         /* ===== Playfair ===== */
         const matrix = k => [...new Set((k + 'ABCDEFGHIKLMNOPQRSTUVWXYZ').replace(/J/g, 'I'))].join('');
